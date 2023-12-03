@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+
+ background-color: rgb(214, 214, 214) ;
+}
+.denav{
+    background-color: #4d4d4d;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items:center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+    position: sticky;
+    top: 0;
+}
+.denav ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    background-color: #808080;
+    border-radius: 12px;
+}
+.denav ul li{
+    transition: all .10s ease-in-out;
+}
+.denav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.denav ul :hover{
+    padding:5px ;
+    font-size: 25px;
+}
+.home{
+    background: url(flat-lay-minimal-home-office-600nw-1711426813.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    background-position: right;
+    background-size: cover;
+    font-size: 25px;
+    flex-direction: column;
+}
+main{
+    background-color: #808080;
+    margin: 0 10px 0 10px;
+    border-radius: 12px;
+}
+.about{
+    margin-block:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 0 200px 0px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    color: white
+}
+.whats{
+    margin-block:50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 0 200px 0px;
+}
+.trap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30vh 0 30vh;
+}
+.project{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 200px 0 200px 0px;
+}
+.project a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project a img{
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 12px;
+    transition: all .20s ease-in-out;
+}
+.project a img:hover{
+    transform: scale(0.9);
+    border: rgb(255, 255, 255) 2px solid;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 600px){
+    p{
+        font-size: 20px;
+    }
+    .trap{
+        padding: 0 10px 0 10px;
+    }
+}@media only screen and (max-width: 820px){
+    .trap{
+        padding: 0 10vh 0 10vh;
+        text-align: none    ;
+    }
+}
